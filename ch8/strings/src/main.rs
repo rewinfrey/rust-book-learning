@@ -37,7 +37,7 @@ fn main() {
     // Things get complicated with UTF encodings. So to avoid all that, it's up to the programmer
     // to determine what reprsentation makes the most sense when needing to slice a string or get an element at an index.
     let s4 = String::from("hello world");
-    for c in s4.to_string().chars() {
+    for c in s4.chars() {
         println!("{}", c);
     }
 }
